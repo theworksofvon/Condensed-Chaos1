@@ -6,7 +6,7 @@ const Tezos = new TezosToolkit("https://testnet-tezos.giganode.io");
 const options = {
   name: "CondensedChaos",
   iconUrl: "https://tezostaquito.io/img/favicon.png",
-  preferredNetwork: "ithacanet",
+  preferredNetwork: "mainnet",
 };
 
 const wallet = new BeaconWallet(options);
@@ -20,7 +20,7 @@ const connectWallet = async () => {
 
   if (!account) {
     await wallet
-      .requestPermissions({ network: { type: "ithacanet" } })
+      .requestPermissions({ network: { type: "mainnet" } })
       .then((_) => wallet.getPKH())
       .then((address) => console.log(`Your address: ${address}`));
 
@@ -39,7 +39,7 @@ const checkIfWalletConnected = async (wallet) => {
     const activeAccount = await wallet.client.getActiveAccount();
     if (!activeAccount) {
       await wallet.client.requestPermissions({
-        type: { network: "itacanet" },
+        type: { network: "mainnet" },
       });
     }
     return {
