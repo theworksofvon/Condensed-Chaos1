@@ -87,10 +87,10 @@ const Homepage = () => {
             </a>
           </li>
           <li className="unique-item">
-            <a href="#">About</a>
+            <a href="">About</a>
           </li>
           <li>
-            <a href="#">Team</a>
+            <a href="">Team</a>
           </li>
         </ul>
         {openMenu}
@@ -111,16 +111,16 @@ const Homepage = () => {
         </div>
         <div className="middle">
           <div className="img-1">
-            <img src={heroImg} alt="Condensed Chaos Image 101" />
+            <img src={heroImg} alt="" />
           </div>
           <div className="img-1">
-            <img src={heroImg2} alt="Condensed Chaos Image 102" />
+            <img src={heroImg2} alt="" />
           </div>
           <div className="img-1">
-            <img src={heroImg3} alt="Condensed Chaos Image 103" />
+            <img src={heroImg3} alt="" />
           </div>
           <div className="img-1">
-            <img src={heroImg4} alt="Condensed Chaos Image 104" />
+            <img src={heroImg4} alt="" />
           </div>
         </div>
         <div className="bottom">

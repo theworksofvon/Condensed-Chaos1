@@ -52,9 +52,6 @@ li.unique-item a {
   padding: 0.7rem;
 }
 
-div.hero div.top {
-}
-
 .hero-title {
   display: flex;
   flex-direction: column;
@@ -203,7 +200,53 @@ ul ion-icon {
 ul {
   transition: 0.5s ease-in-out;
 }
+
+header.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.content h1 {
+  color: red;
+  margin: 1rem;
+  font-size: 60px;
+}
+.content h2 {
+  margin: 1rem;
+  font-size: 40px;
+}
+.content span {
+  color: blue;
+}
+div.countdown {
+  font-size: 36px;
+  margin: 1rem;
+}
+
+.art-gif {
+  border-radius: 1rem;
+  width: 30rem;
+  height: 30rem;
+  display: block;
+  margin: 0.5rem;
+}
 @media (min-width: 320px) and (max-width: 999px) {
+  .art-gif {
+    width: 20rem;
+    height: 20rem;
+  }
+  .content h1 {
+    font-size: 40px;
+  }
+  .cotent h2 {
+    font-size: 30px;
+  }
+  div.countdown {
+    font-size: 28px;
+  }
   .nav-title {
     margin-left: 0;
   }
