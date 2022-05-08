@@ -43,13 +43,13 @@ const Homepage = () => {
           onClick={() => setShowMenu(!showMenu)}
         ></ion-icon>
         <li>
-          <a href="#">Connect</a>
+          <a href="">Connect</a>
         </li>
         <li>
-          <a href="#">About</a>
+          <a href="">About</a>
         </li>
         <li>
-          <a href="#">Team</a>
+          <a href="">Team</a>
         </li>
       </ul>
     );
@@ -76,7 +76,7 @@ const Homepage = () => {
         <ul className="nav-items">
           <li>
             <a
-              href=""
+              href="#"
               onClick={wallet ? handleDisconnectWallet : handleConnectWallet}
             >
               {wallet
@@ -104,7 +104,7 @@ const Homepage = () => {
             </h2>
             <h3>
               an on-chain <span className="span-a">generative art</span> project
-              of <span className="span-b">555</span> pieces
+              of <span className="span-b">1111</span> pieces
             </h3>
             <h1>By Von from WoV</h1>
           </div>
@@ -125,7 +125,7 @@ const Homepage = () => {
         </div>
         <div className="bottom">
           {wallet ? (
-            <button type="button">Mint Now</button>
+            <button type="button">View Art</button>
           ) : (
             <button type="button" onClick={handleConnectWallet}>
               Connect Wallet

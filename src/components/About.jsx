@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className="about-main">
       <header className="about-top">
         <h1>About the Project</h1>
         <p>
@@ -10,7 +10,7 @@ const About = () => {
           <span className="span-a">Chaos</span> is a project that explores into
           the realm of metaphysics. It encourages exploration into the unknown.
           90% of the known universe is dark matter. This dark matter is also
-          chaos. This project condenses and organizes this chaos into 555
+          chaos. This project condenses and organizes this chaos into 1111
           pieces.
         </p>
       </header>

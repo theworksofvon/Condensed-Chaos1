@@ -2,7 +2,9 @@
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  overscroll-behavior: none;
+}
 header.nav {
   display: flex;
   justify-content: space-between;
@@ -22,7 +24,9 @@ header.nav {
 }
 
 header.nav svg {
-  display: none;
+  margin: 2rem;
+  display: block;
+  cursor: pointer;
 }
 ul.nav-items {
   list-style: none;
@@ -102,6 +106,13 @@ div.img-1 img {
   height: 20rem;
   display: block;
 }
+div.img-1 img:hover {
+  width: 25rem;
+  height: 25rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
 div.bottom {
   display: flex;
   flex-direction: column;
@@ -116,22 +127,24 @@ div.bottom button {
   padding: 1rem;
   color: black;
 }
-.open-menu {
+
+ul.open-menu {
   position: fixed;
   align-items: center;
-  margin-left: 1rem;
-  padding: 10rem;
   background-color: gray;
   width: 100%;
   height: 100%;
+  transition: 0.5s ease;
+  list-style: none;
 }
 .open-menu li {
   padding: 4rem;
   font-weight: 500;
 }
 .open-menu li :hover {
-  background-color: azure;
-  border-radius: 7rem;
+  font-size: 22px;
+  border-radius: 1rem;
+  transition: 0.1s ease-in;
 }
 header.about-top {
   display: flex;
@@ -185,6 +198,45 @@ body {
   background-image: url(../src/img/background.png);
   background-size: cover;
 }
+.footer {
+  background-color: rgba(248, 248, 255, 0.486);
+}
+
+.footer-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer-content a {
+  flex-direction: row;
+}
+
+p.footer-last {
+  font-size: 18px;
+}
+
+.footer-socials ion-icon {
+  font-size: 22px;
+  padding: 1rem;
+}
+ion-icon:hover {
+  font-size: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+.footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
 
 ion-icon {
   font-size: 22px;
@@ -197,8 +249,15 @@ ul ion-icon {
   font-size: 30px;
 }
 
-ul {
-  transition: 0.5s ease-in-out;
+.open-menu li {
+  margin: 0;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.open-menu li a {
+  text-decoration: none;
+  color: white;
 }
 
 header.coming-soon {
@@ -234,6 +293,12 @@ div.countdown {
   margin: 0.5rem;
 }
 @media (min-width: 320px) and (max-width: 999px) {
+  .open-menu ion-icon {
+    padding-top: 10rem;
+  }
+  .open-menu li {
+    padding: 2rem;
+  }
   .art-gif {
     width: 20rem;
     height: 20rem;
@@ -281,5 +346,10 @@ div.countdown {
   }
   .about-middle h1 {
     margin: 0.5rem;
+  }
+}
+@media (min-width: 999px) {
+  header.nav svg {
+    display: none;
   }
 }

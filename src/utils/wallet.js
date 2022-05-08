@@ -51,6 +51,21 @@ const checkIfWalletConnected = async (wallet) => {
     };
   }
 };
+
+{
+  /*export const mintItem = async (amount) => {
+  const response = await checkIfWalletConnected(wallet);
+
+  if (response.success) {
+    const tezos = new TezosToolkit(rpcURL);
+    tezos.setWalletProvider(wallet);
+    const contract = await tezos.wallet.at(config.contractAddress);
+    const mint = await contract.methods.default(amount).send();
+    const result = await Operation.confirmation();
+    console.log(`${amount} minted`);
+  }
+}; */
+}
 export {
   connectWallet,
   disconnectWallet,
